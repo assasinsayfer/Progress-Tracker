@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./css/style.css" />
+    <title>Progress-Tracker</title>
+  </head>
+  <body>
+    <h1>Progress Tracker</h1>
+    <input
+      type="text"
+      id="goalInput"
+      placeholder="Adding Goals"
+      autocomplete="off"
+    />
+
+    <div class="btns">
+      <button type="button" id="addGoalBtn" class="btn">Adding</button>
+      <button type="button" id="removeGoalBtn" class="btn">Remove</button>
+      <!-- kartalarni korish uchun -->
+      <button type="button" id="showGoalBtn" class="btn">Show Goal</button>
+    </div>
+    <div class="goal-cards hidden">
+      <ul id="goalList">
+        <button type="button" id="closeGoalBtn" class="close">&times;</button>
+      </ul>
+    </div>
+    <script src="./js/app.js"></script>
+  </body>
+</html>
